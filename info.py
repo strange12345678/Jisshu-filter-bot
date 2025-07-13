@@ -53,7 +53,7 @@ FILES_DATABASE = environ.get("FILES_DATABASE", "")
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "jisshu")
 
 # Other Channel's
-SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", " "))
+SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002681593596"))
 DELETE_CHANNELS = int(environ.get("DELETE_CHANNELS", "0"))
 request_channel = environ.get("REQUEST_CHANNEL", "-1002592614775")
 REQUEST_CHANNEL = (
@@ -61,10 +61,10 @@ REQUEST_CHANNEL = (
     if request_channel and id_pattern.search(request_channel)
     else None
 )
-MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", ""))
+MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1002342440100"))
 
 # Added Link Here Not Id
-SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "")
+SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "https://t.me/UniformHelp")
 MOVIE_GROUP_LINK = environ.get("MOVIE_GROUP_LINK", "-1002336823412")
 
 # Verification
